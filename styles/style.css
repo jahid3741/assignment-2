@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-fonts {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+/* body background color */
+body{
+    background-color: #F5F8FF;
+}
+/* nav bar design */
+.navbar {
+    background-color: #FFFFFF;
+    list-style: none;
+    justify-content: space-between;
+    margin: 40px 164px 0 136px;
+    text-align: center; 
+    width: 1140px;
+    height: 71px;     
+}
+.nav-links{
+    list-style: none;
+    gap: 42px;
+    justify-content: center;
+}
+.nav-links a{
+    text-decoration: none;
+}
+.shopping-cart{
+    width: 24px;
+    height:24px;
+}
+.nav-link{
+    color: black;
+    font-weight: 600;
+}
+.nav-linkss{
+    color: #8987A1;
+}
+.nav-linksss{
+    color: black;
+}
+.nav-item{
+   margin-top: 10px;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.common-color{
+    color: #E95A08;
+}
+.text-color{
+    color: #7A7C7F;
+}

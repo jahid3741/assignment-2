@@ -54,7 +54,6 @@ body{
     font-size: 4rem;
     font-weight: 700;
 }
-
 /* shared styles */
 .display-flex{
     display: flex;
@@ -268,7 +267,7 @@ body{
         margin: 16px;
         align-items: center;
         width: 90%;
-        background-color: aliceblue;;
+        background-color: aliceblue;
     }
 
     .nav-links {
@@ -277,12 +276,10 @@ body{
         margin: 0;
     }
 
-    /* Hide Home, Shop, About-us */
     .nav-item:nth-child(1),
     .nav-item:nth-child(2),
     .nav-item:nth-child(3) {
         display: none;
-        
     }
 
     .shopping-cart {
@@ -305,7 +302,6 @@ body{
     .fresh-flowers {
         margin-top: 20px;
         width: 100%;
-        
     }
 
     .fresh {
@@ -325,80 +321,120 @@ body{
         max-width: 100%;
         height: auto;
     }
-    /* plants */
-    .plants{
-        background-color: #F5F8FF;
-    }
+
     .plants {
-        margin: 60px 20px 0 20px;
+        background-color: #F5F8FF;
+        margin: 32px 8px 0 8px;   /* Less margin for mobile, more space-efficient */
+        padding: 16px 0;
+        border-radius: 10px;
     }
 
+    /* Plants heading */
     .plants-heading .title {
-        font-size: 1.5rem;
+        font-size: 1.15rem;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 6px;
+        text-align: left;
     }
-
+    .plants-heading .title span {
+        color: #FF6F1F; /* Accent color for "Our" or "Plants" */
+    }
     .plants-heading p {
-        font-size: 0.875rem;
+        font-size: 0.92rem;
+        color: #666;
+        margin-bottom: 18px;
+        text-align: left;
     }
 
+    /* Cards grid for products */
     .card-- {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
         width: 100%;
+        margin: 0 auto;
     }
 
     .lily, .price {
         margin-left: 0;
         text-align: center;
+        font-size: 1rem;
+        color: #222;
     }
 
     .btn {
         display: block;
-        margin: 10px auto 0 auto;
+        margin: 8px auto 0 auto;
+        width: 90%;
+        font-size: 1rem;
+        background: #FF6F1F;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 0;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: background 0.2s;
+    }
+    .btn:active {
+        background: #e65c00;
     }
 
+    /* Plants lover section */
     .plants-lover {
-        margin: 60px 20px 0 20px;
+        margin: 32px 8px 0 8px;
+        padding: 0;
     }
 
+    /* Flower store image */
     .flower-store {
         width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
     }
 
+    /* Hide trusted logos on mobile */
     .trusted {
-        display: none;
+        display: none !important;
     }
 
+    /* Flex utilities */
     .display-flex {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
         align-items: center;
     }
 
     .li-gap {
-        padding-left: 20px;
+        padding-left: 16px;
     }
 
+    /* Latest heading */
     .latest-heading {
-        margin: 60px 20px 0 20px;
+        margin: 32px 8px 0 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #222;
     }
 
+    /* Container 3 and both */
     .container-3 {
-        margin: 60px 20px;
+        margin: 32px 8px;
         flex-direction: column;
         display: flex;
-        gap: 20px;
+        gap: 16px;
     }
-
     .both {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
+    /* Plant cards with background images */
     .bloom-plant,
     .ana-plant,
     .zabo-plant {
@@ -406,63 +442,67 @@ body{
         height: auto;
         background-size: cover;
         background-position: center;
+        border-radius: 8px;
     }
 
+    /* Text padding for sections */
     .text-padding,
     .text-paddingg {
-        padding: 40px 20px;
+        padding: 24px 10px;
     }
 
+    /* Join the color section */
     .join-the-color {
         background-size: cover;
         background-position: center;
-        padding-top: 100px;
+        padding-top: 60px;
         height: auto;
+        border-radius: 10px;
     }
 
     .join {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #222;
     }
 
     .size {
-        width: 90%;
-        margin-top: 20px;
+        width: 95%;
+        margin-top: 16px;
     }
 
     .size-1 {
+        margin-top: 8px;
+    }
+      /* footer */
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-description {
+        max-width: 100%;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .footer-social {
         margin-top: 10px;
     }
 
-    /* footer section responsive */
-    .footer-container {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .footer-left {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-description {
-    max-width: 100%;
-    font-size: 14px;
-    margin: 0 auto;
-  }
-
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .footer-social {
-    margin-top: 10px;
-  }
-
-  .footer-social img {
-    width: 28px;
-    height: 28px;
-  }
-
-
+    .footer-social img {
+        width: 28px;
+        height: 28px;
+    }
 }

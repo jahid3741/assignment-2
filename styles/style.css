@@ -137,21 +137,21 @@ body{
     row-gap: 15px;
 }
 .bloom-plant{
-    background-image: url(../assets/deal-bloom.png);
+    background-image: url(./assets/deal-bloom.png);
     border-radius: 14px;
     width: 367px;
     height: 201px;
     filter: brightness(70%);
 }
 .ana-plant{
-    background-image: url(../assets/deal-ana.png);
+    background-image: url(./assets/deal-ana.png);
     border-radius: 14px;
     width: 367px;
     height: 201px;
     filter: brightness(70%);
 }
 .zabo-plant{
-    background-image: url(../assets/deal-zabo.png);
+    background-image: url(./assets/deal-zabo.png);
     border-radius: 22px;
     border-radius: 22px;
     width: 753px;

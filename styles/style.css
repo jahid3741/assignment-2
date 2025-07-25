@@ -254,255 +254,286 @@ body{
  
 /* responsive design for mobile phone  */
 @media (max-width: 576px) {
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
+  html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #F5F8FF;
+  }
 
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 16px;
-        align-items: center;
-        width: 90%;
-        background-color: aliceblue;
-    }
+  /* Navbar */
+  .navbar {
+    margin: 0;
+    padding: 12px 16px;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+  }
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  .nav-links {
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .nav-item {
+    display: none !important;
+  }
+  .shopping-cart {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+  }
+  .nav-linksss {
+    display: inline-block;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 2px;
+    vertical-align: middle;
+  }
 
-    .nav-links {
-        gap: 10px;
-        padding: 0;
-        margin: 0;
-    }
+  /* Hero section */
+  .container-1 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .always {
+    flex-direction: column-reverse !important;
+    align-items: stretch;
+    gap: 0;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+  }
+  .fresh-flowers {
+    padding: 20px 14px 0 14px;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .fresh {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    line-height: 1.1;
+  }
+  .common-color {
+    color: #E95A08;
+    font-weight: 700;
+  }
+  .text-color {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+  }
+  .always img {
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 0;
+  }
 
-    .nav-item:nth-child(1),
-    .nav-item:nth-child(2),
-    .nav-item:nth-child(3) {
-        display: none;
-    }
+  /* Plants section */
+  .plants {
+    margin: 32px 0 0 0;
+    padding: 0 0 24px 0;
+    width: 100vw;
+    max-width: 100vw;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .plants-heading {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .card-- {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 0 0 16px 0;
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .lily, .price {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #222;
+  }
+  .btn {
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 90%;
+    font-size: 1rem;
+    background: #E95A08;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-weight: bold;
+  }
 
-    .shopping-cart {
-        width: 20px;
-        height: 20px;
-    }
+  /* Plants lover section */
+  .plants-lover {
+    margin: 32px 0 0 0;
+    padding: 0 10px;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .display-flex {
+    flex-direction: column !important;
+    gap: 20px;
+    align-items: center;
+  }
+  .flower-store {
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  .trusted {
+    display: none !important;
+  }
+  .li-gap {
+    padding-left: 20px;
+  }
 
-    .container-1 {
-        margin: 20px 10px;
-        padding: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
+  /* Latest deals */
+  .latest-heading {
+    margin: 32px 0 0 0;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .container-3 {
+    margin: 32px 0;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .both {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .bloom-plant,
+  .ana-plant,
+  .zabo-plant {
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  .text-padding,
+  .text-paddingg {
+    padding: 30px 10px;
+    font-size: 1.1rem;
+  }
 
-    .always {
-        flex-direction: column-reverse;
-        width: 100%;
-    }
+  /* Join the colorful bunch */
+  .join-the-color {
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    height: auto;
+    border-radius: 10px;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .join {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .size {
+    width: 90vw;
+    max-width: 90vw;
+    margin-top: 20px;
+    height: 44px;
+    font-size: 1rem;
+  }
+  .size-1 {
+    margin-top: 10px;
+    width: 90vw;
+    max-width: 90vw;
+    height: 44px;
+    font-size: 1rem;
+  }
 
-    .fresh-flowers {
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .fresh {
-        font-size: 2rem;
-    }
-
-    .fresh-flowers p {
-        font-size: 0.9rem;
-        padding: 0 10px;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .plants {
-        background-color: #F5F8FF;
-        margin: 32px 8px 0 8px;   /* Less margin for mobile, more space-efficient */
-        padding: 16px 0;
-        border-radius: 10px;
-    }
-
-    /* Plants heading */
-    .plants-heading .title {
-        font-size: 1.15rem;
-        font-weight: bold;
-        color: #222;
-        margin-bottom: 6px;
-        text-align: left;
-    }
-    .plants-heading .title span {
-        color: #FF6F1F; /* Accent color for "Our" or "Plants" */
-    }
-    .plants-heading p {
-        font-size: 0.92rem;
-        color: #666;
-        margin-bottom: 18px;
-        text-align: left;
-    }
-
-    /* Cards grid for products */
-    .card-- {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .lily, .price {
-        margin-left: 0;
-        text-align: center;
-        font-size: 1rem;
-        color: #222;
-    }
-
-    .btn {
-        display: block;
-        margin: 8px auto 0 auto;
-        width: 90%;
-        font-size: 1rem;
-        background: #FF6F1F;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 0;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        transition: background 0.2s;
-    }
-    .btn:active {
-        background: #e65c00;
-    }
-
-    /* Plants lover section */
-    .plants-lover {
-        margin: 32px 8px 0 8px;
-        padding: 0;
-    }
-
-    /* Flower store image */
-    .flower-store {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border-radius: 8px;
-    }
-
-    /* Hide trusted logos on mobile */
-    .trusted {
-        display: none !important;
-    }
-
-    /* Flex utilities */
-    .display-flex {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
-
-    .li-gap {
-        padding-left: 16px;
-    }
-
-    /* Latest heading */
-    .latest-heading {
-        margin: 32px 8px 0 8px;
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: #222;
-    }
-
-    /* Container 3 and both */
-    .container-3 {
-        margin: 32px 8px;
-        flex-direction: column;
-        display: flex;
-        gap: 16px;
-    }
-    .both {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    /* Plant cards with background images */
-    .bloom-plant,
-    .ana-plant,
-    .zabo-plant {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-        border-radius: 8px;
-    }
-
-    /* Text padding for sections */
-    .text-padding,
-    .text-paddingg {
-        padding: 24px 10px;
-    }
-
-    /* Join the color section */
-    .join-the-color {
-        background-size: cover;
-        background-position: center;
-        padding-top: 60px;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .join {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #222;
-    }
-
-    .size {
-        width: 95%;
-        margin-top: 16px;
-    }
-
-    .size-1 {
-        margin-top: 8px;
-    }
-      /* footer */
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .footer-left {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-description {
-        max-width: 100%;
-        font-size: 14px;
-        margin: 0 auto;
-    }
-
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    .footer-social {
-        margin-top: 10px;
-    }
-
-    .footer-social img {
-        width: 28px;
-        height: 28px;
-    }
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-description {
+    max-width: 100vw;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .footer-social {
+    margin-top: 10px;
+    gap: 16px;
+  }
+  .footer-social img {
+    width: 28px;
+    height: 28px;
+  }
 }

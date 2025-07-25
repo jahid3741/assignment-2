@@ -81,6 +81,7 @@ body{
     font-size: 3.125rem;
     font-weight: bold;
 }
+
 /* section of plants  */
 .plants{
     margin: 120px 150px 0 150px;
@@ -251,19 +252,217 @@ body{
   height: 24px;
   cursor: pointer;
 }
-
-
-/* responsive design for mobile phone */
-@media screen and (max-width: 576px) { 
-    .nav-links .nav-item:nth-child(1),
-    .nav-links .nav-item:nth-child(2), 
-    .nav-links .nav-item:nth-child(3) 
-    {
-        display: none;
-        margin: 0 auto;
-        justify-content: space-between;
+ 
+/* responsive design for mobile phone  */
+@media (max-width: 576px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
-     .always {
-  flex-direction: column-reverse;
-}
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 16px;
+        align-items: center;
+        width: 90%;
+        background-color: aliceblue;;
+    }
+
+    .nav-links {
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Hide Home, Shop, About-us */
+    .nav-item:nth-child(1),
+    .nav-item:nth-child(2),
+    .nav-item:nth-child(3) {
+        display: none;
+        
+    }
+
+    .shopping-cart {
+        width: 20px;
+        height: 20px;
+    }
+
+    .container-1 {
+        margin: 20px 10px;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .always {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .fresh-flowers {
+        margin-top: 20px;
+        width: 100%;
+        
+    }
+
+    .fresh {
+        font-size: 2rem;
+    }
+
+    .fresh-flowers p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* plants */
+    .plants{
+        background-color: #F5F8FF;
+    }
+    .plants {
+        margin: 60px 20px 0 20px;
+    }
+
+    .plants-heading .title {
+        font-size: 1.5rem;
+    }
+
+    .plants-heading p {
+        font-size: 0.875rem;
+    }
+
+    .card-- {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .lily, .price {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+
+    .plants-lover {
+        margin: 60px 20px 0 20px;
+    }
+
+    .flower-store {
+        width: 100%;
+        height: auto;
+    }
+
+    .trusted {
+        display: none;
+    }
+
+    .display-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .li-gap {
+        padding-left: 20px;
+    }
+
+    .latest-heading {
+        margin: 60px 20px 0 20px;
+    }
+
+    .container-3 {
+        margin: 60px 20px;
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+
+    .both {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bloom-plant,
+    .ana-plant,
+    .zabo-plant {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .text-padding,
+    .text-paddingg {
+        padding: 40px 20px;
+    }
+
+    .join-the-color {
+        background-size: cover;
+        background-position: center;
+        padding-top: 100px;
+        height: auto;
+    }
+
+    .join {
+        font-size: 2rem;
+    }
+
+    .size {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .size-1 {
+        margin-top: 10px;
+    }
+
+    /* footer section responsive */
+    .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-description {
+    max-width: 100%;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer-social img {
+    width: 28px;
+    height: 28px;
+  }
+
+
 }
